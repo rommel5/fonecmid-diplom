@@ -6797,17 +6797,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.РеализацияТоваровУслуг.Attribute.Договор</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.ОрганизацииПрисоединенныеФайлы.Attribute.ДатаСоздания</name>
 		<right>
 			<name>View</name>
