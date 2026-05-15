@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="60c6a436-f4ef-42ee-8e1e-fd1171f20754">
+  <name>ВКМ_РасчетЗаработнойПлаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ расчет заработной платы</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ВКМ_КатегорияПользователей</content>
+  <content>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</content>
+  <content>ChartOfCalculationTypes.ВКМ_Удержания</content>
+  <content>DataProcessor.ВКМ_ЗаполнениеГрафика</content>
+  <content>Catalog.ВКМ_ГрафикиРаботы</content>
+  <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
+  <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
+  <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
+  <content>Document.ВКМ_НачислениеЗарплаты</content>
+  <content>Document.ВКМ_ФиксированнойПремии</content>
+  <content>Document.ВКМ_ГрафикОтпусков</content>
+  <content>Document.ВКМ_ВыплатаЗарплаты</content>
+  <content>CalculationRegister.ВКМ_ДополнительныеНачисления</content>
+  <content>CalculationRegister.ВКМ_Удержания</content>
+  <content>InformationRegister.ВКМ_ГрафикРаботы</content>
+  <content>AccumulationRegister.ВКМ_Отпуска</content>
+</mdclass:Subsystem>

@@ -50,6 +50,8 @@
   </languages>
   <subsystems>Subsystem.Администрирование</subsystems>
   <subsystems>Subsystem.ВКМ_ДобавленныеОбъекты</subsystems>
+  <subsystems>Subsystem.ВКМ_ОбслуживаниеКлиентов</subsystems>
+  <subsystems>Subsystem.ВКМ_РасчетЗаработнойПлаты</subsystems>
   <subsystems>Subsystem.Деньги</subsystems>
   <subsystems>Subsystem.ПодключаемыеОтчетыИОбработки</subsystems>
   <subsystems>Subsystem.ПокупкиИПродажи</subsystems>
@@ -576,7 +578,8 @@
   <roles>Role.БазоваяФункциональностьТП</roles>
   <roles>Role.БазовыеПраваБСП</roles>
   <roles>Role.БазовыеПраваВнешнихПользователейБСП</roles>
-  <roles>Role.ВКМ_ОбслуживаниеКлиентов</roles>
+  <roles>Role.ВКМ_ГрупповоеСозданиеАктовРоль</roles>
+  <roles>Role.ВКМ_ОбслуживаниеКлиентовРоль</roles>
   <roles>Role.ВыводНаПринтерФайлБуферОбмена</roles>
   <roles>Role.ДобавлениеИзменениеВариантовОтчетов</roles>
   <roles>Role.ДобавлениеИзменениеВидовКонтактнойИнформации</roles>
@@ -1181,6 +1184,8 @@
   <catalogs>Catalog.ВерсииРасширений</catalogs>
   <catalogs>Catalog.ВерсииФайлов</catalogs>
   <catalogs>Catalog.ВидыКонтактнойИнформации</catalogs>
+  <catalogs>Catalog.ВКМ_ГрафикиРаботы</catalogs>
+  <catalogs>Catalog.ВКМ_КатегорияПользователей</catalogs>
   <catalogs>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</catalogs>
   <catalogs>Catalog.ВКМ_УведомленияТелеграмБоту</catalogs>
   <catalogs>Catalog.ВнешниеПользователи</catalogs>
@@ -1222,7 +1227,11 @@
   <catalogs>Catalog.УчетныеЗаписиСинхронизацииФайлов</catalogs>
   <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
   <catalogs>Catalog.Файлы</catalogs>
+  <documents>Document.ВКМ_ВыплатаЗарплаты</documents>
+  <documents>Document.ВКМ_ГрафикОтпусков</documents>
+  <documents>Document.ВКМ_НачислениеЗарплаты</documents>
   <documents>Document.ВКМ_ОбслуживаниеКлиента</documents>
+  <documents>Document.ВКМ_ФиксированнойПремии</documents>
   <documents>Document.ЗаказПокупателя</documents>
   <documents>Document.ОплатаОтПокупателя</documents>
   <documents>Document.ОплатаПоставщику</documents>
@@ -1291,6 +1300,8 @@
   <reports>Report.УниверсальныйОтчет</reports>
   <dataProcessors>DataProcessor.АвтоматическоеИзвлечениеТекстов</dataProcessors>
   <dataProcessors>DataProcessor.ВводКонтактнойИнформации</dataProcessors>
+  <dataProcessors>DataProcessor.ВКМ_ЗаполнениеГрафика</dataProcessors>
+  <dataProcessors>DataProcessor.ВКМ_МассовоеСозданиеАктов</dataProcessors>
   <dataProcessors>DataProcessor.ГрупповоеИзменениеРеквизитов</dataProcessors>
   <dataProcessors>DataProcessor.ЖурналРегистрации</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаДанныхИзФайла</dataProcessors>
@@ -1317,6 +1328,8 @@
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанных</informationRegisters>
   <informationRegisters>InformationRegister.БезопасноеХранилищеДанныхОбластейДанных</informationRegisters>
   <informationRegisters>InformationRegister.ВерсииПодсистем</informationRegisters>
+  <informationRegisters>InformationRegister.ВКМ_ГрафикРаботы</informationRegisters>
+  <informationRegisters>InformationRegister.ВКМ_УсловияОплатыСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ГруппыЗначенийДоступа</informationRegisters>
   <informationRegisters>InformationRegister.ДанныеОбработанныеВЦентральномУзлеРИБ</informationRegisters>
   <informationRegisters>InformationRegister.ДвоичныеДанныеФайлов</informationRegisters>
@@ -1383,6 +1396,8 @@
   <informationRegisters>InformationRegister.ФайлыВРабочемКаталоге</informationRegisters>
   <informationRegisters>InformationRegister.ФиксацияОбработкиДанныхОбработчиками</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</accumulationRegisters>
+  <accumulationRegisters>AccumulationRegister.ВКМ_Отпуска</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженностьПокупателей</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.ЗадолженностьПоставщикам</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Затраты</accumulationRegisters>
@@ -1390,4 +1405,10 @@
   <accumulationRegisters>AccumulationRegister.ОстаткиТоваров</accumulationRegisters>
   <accumulationRegisters>AccumulationRegister.Продажи</accumulationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ВКМ_Удержания</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.ВКМ_ДополнительныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_ОсновныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ВКМ_Удержания</calculationRegisters>
 </mdclass:Configuration>

@@ -395,4 +395,11 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <templates uuid="e7405324-d461-4aa1-a94f-34750dc05874">
+    <name>ПФ_MXL_Акт</name>
+    <synonym>
+      <key>ru</key>
+      <value>П ф MXL акт</value>
+    </synonym>
+  </templates>
 </mdclass:Document>

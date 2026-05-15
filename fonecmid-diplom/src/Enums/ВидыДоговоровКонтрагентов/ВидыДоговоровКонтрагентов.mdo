@@ -30,7 +30,7 @@
     <name>ВКМ_Клиент</name>
     <synonym>
       <key>ru</key>
-      <value>ВКМ клиент</value>
+      <value>Абонентское обслуживание</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

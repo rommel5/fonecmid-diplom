@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="af65cf30-5101-4fd2-8e9d-21718b15d974">
+  <name>ВКМ_Бот</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ бот</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

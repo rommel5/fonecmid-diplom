@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02d6df75-0f88-4f13-aa5c-cdd796bba127">
+  <producedTypes>
+    <objectType typeId="d3f08cc7-fb7b-4250-b450-17519d2bb4e0" valueTypeId="fbca3c0c-663c-4b34-b490-a70cf51835da"/>
+    <managerType typeId="d1b3b0d0-8410-4030-933d-39f2de6a680e" valueTypeId="38183e2a-14cc-4111-a1b1-6e205b818b38"/>
+  </producedTypes>
+  <name>ВКМ_МассовоеСозданиеАктов</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ массовое создание актов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:DataProcessor>

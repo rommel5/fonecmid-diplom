@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:AccumulationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="06ed4ad2-6fd0-4c0c-bda5-227e8ea8c3ca">
+  <producedTypes>
+    <selectionType typeId="3ba984d2-7aca-4437-b1d1-c3f3547c74a0" valueTypeId="1fa8cb31-f49d-43fb-a3b3-88afb3e5bdbd"/>
+    <listType typeId="afbe9b8c-5b8b-4c6d-88ab-21fa54441dab" valueTypeId="457efb8b-098a-45a0-b2cc-905149f61aec"/>
+    <managerType typeId="813381fc-f19a-46f4-ae73-22ed5c9e1ba6" valueTypeId="c20c1bae-ed3e-43cd-aca9-1b1b11ce6c3d"/>
+    <recordSetType typeId="142227ca-8659-4675-9048-70cfa39ce585" valueTypeId="854b5b5d-150c-4095-933c-8b7ed5b60921"/>
+    <recordKeyType typeId="66e7568e-29c6-4a3c-9c6b-453571254e01" valueTypeId="0671bd6b-c530-4ad5-bc9c-366460097e3c"/>
+    <recordType typeId="8333d2f7-9d4b-44aa-ab1a-eea4100d258f" valueTypeId="c6cafa66-6f69-45e5-85c7-b22e54f33a7d"/>
+  </producedTypes>
+  <name>ВКМ_Отпуска</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ отпуска</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSplitting>true</enableTotalsSplitting>
+  <resources uuid="c33b9e67-223a-49aa-8b3c-8d434531f2d7">
+    <name>ВсегоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Всего дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <resources uuid="cb5a1fbb-0e26-45ec-86d5-5f20f3b00dc1">
+    <name>ИспользованоДней</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовано дней</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <dimensions uuid="b0a09118-8248-4735-bb76-fb1fecc14375">
+    <name>Год</name>
+    <synonym>
+      <key>ru</key>
+      <value>Год</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+  <dimensions uuid="9298ba88-ac83-4138-9d36-07b0abfa13c3">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <useInTotals>true</useInTotals>
+  </dimensions>
+</mdclass:AccumulationRegister>
