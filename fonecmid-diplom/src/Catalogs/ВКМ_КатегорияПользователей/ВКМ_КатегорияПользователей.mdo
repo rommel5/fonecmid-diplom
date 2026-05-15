@@ -10,7 +10,7 @@
   <name>ВКМ_КатегорияПользователей</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ категория пользователей</value>
+    <value>Спр категория пользователей</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.ВКМ_КатегорияПользователей.StandardAttribute.Code</inputByString>

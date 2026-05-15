@@ -10,7 +10,7 @@
   <name>ВКМ_ОбслуживаниеКлиента</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ обслуживание клиента</value>
+    <value>Док обслуживание клиента</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Document.ВКМ_ОбслуживаниеКлиента.StandardAttribute.Number</inputByString>

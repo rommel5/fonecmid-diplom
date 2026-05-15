@@ -7,13 +7,13 @@
     <listType typeId="0a7da069-f495-48aa-9947-3a28620b1dcb" valueTypeId="314c0b4a-6042-4982-8eec-20839db317fc"/>
     <managerType typeId="3dce73a3-d21b-424c-aa36-221247c56969" valueTypeId="24fde3df-dde7-4996-82b3-afa4b49c376c"/>
   </producedTypes>
-  <name>ВКМ_ФиксированнойПремии</name>
+  <name>ВКМ_НачислениеФиксированнойПремии</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ Фиксированной премии</value>
+    <value>Док Начисление фиксированной премии</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>Document.ВКМ_ФиксированнойПремии.StandardAttribute.Number</inputByString>
+  <inputByString>Document.ВКМ_НачислениеФиксированнойПремии.StandardAttribute.Number</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -25,6 +25,7 @@
   <autonumbering>true</autonumbering>
   <registerRecords>CalculationRegister.ВКМ_Удержания</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_ДополнительныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <tabularSections uuid="3d85c0cf-1a3c-403e-8dad-7193103b17ef">
@@ -32,10 +33,10 @@
       <objectType typeId="893694e0-1abb-4f25-9ff7-c54dc0aa7c4d" valueTypeId="0e8eaf66-422d-4eb8-b011-b1d63611c336"/>
       <rowType typeId="dcf20e68-1449-48bc-8914-998c5266eac0" valueTypeId="af1c9e10-8162-4826-919c-ffdc2d8c1fd5"/>
     </producedTypes>
-    <name>ТабличнаяЧасть</name>
+    <name>СписокСотрудников</name>
     <synonym>
       <key>ru</key>
-      <value>Табличная часть</value>
+      <value>Список сотрудников</value>
     </synonym>
     <attributes uuid="528dad13-a7bc-4a56-9259-485f6861687e">
       <name>Сотрудник</name>

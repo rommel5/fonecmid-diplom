@@ -11,7 +11,7 @@
   <name>ВКМ_ВыполненныеСотрудникомРаботы</name>
   <synonym>
     <key>ru</key>
-    <value>ВКМ выполненные сотрудником работы</value>
+    <value>РН выполненные сотрудником работы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <dataLockControlMode>Managed</dataLockControlMode>
@@ -51,10 +51,10 @@
     <fullTextSearch>Use</fullTextSearch>
   </resources>
   <dimensions uuid="86e9cc0f-f072-4a03-bd2d-6db435ee5bbc">
-    <name>Пользователь</name>
+    <name>Сотрудник</name>
     <synonym>
       <key>ru</key>
-      <value>Пользователь</value>
+      <value>Сотрудник</value>
     </synonym>
     <type>
       <types>CatalogRef.Пользователи</types>

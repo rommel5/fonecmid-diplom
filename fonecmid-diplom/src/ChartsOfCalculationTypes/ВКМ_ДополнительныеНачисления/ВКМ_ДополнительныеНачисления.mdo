@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:ChartOfCalculationTypes xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38462f1b-ef2f-4287-8331-9b90d758d194">
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38462f1b-ef2f-4287-8331-9b90d758d194">
   <producedTypes>
     <objectType typeId="f4225010-a257-48d2-9251-f8481920b44c" valueTypeId="8ad3eba8-534e-4f7f-a0ec-dbc83a3b8459"/>
     <refType typeId="79b4ff4e-7033-43bc-8261-a08ae985ed8a" valueTypeId="2da92dea-f1ed-478d-9494-e04362642e9a"/>
@@ -32,4 +32,22 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <predefined>
+    <items id="2d5aea22-7916-41c0-8838-e701fb78c2a6">
+      <name>ДоплатаСпециалистам</name>
+      <description>Доплата специалистам</description>
+      <code xsi:type="core:StringValue">
+        <value>3</value>
+      </code>
+    </items>
+    <items id="a8df9540-5c62-4aee-a6d2-558a8216c8b6">
+      <name>Премия</name>
+      <description>Премия</description>
+      <code xsi:type="core:StringValue">
+        <value>4</value>
+      </code>
+      <leading>ChartOfCalculationTypes.ВКМ_ДополнительныеНачисления.ДоплатаСпециалистам</leading>
+      <leading>ChartOfCalculationTypes.ВКМ_ОсновныеНачисления.Оклад</leading>
+    </items>
+  </predefined>
 </mdclass:ChartOfCalculationTypes>
