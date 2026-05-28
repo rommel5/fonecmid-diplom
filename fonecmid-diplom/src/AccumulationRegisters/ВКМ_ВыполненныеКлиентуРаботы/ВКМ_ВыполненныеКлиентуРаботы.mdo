@@ -74,7 +74,7 @@
       <value>Договор</value>
     </synonym>
     <type>
-      <types>DocumentRef.ВКМ_ОбслуживаниеКлиента</types>
+      <types>CatalogRef.ДоговорыКонтрагентов</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

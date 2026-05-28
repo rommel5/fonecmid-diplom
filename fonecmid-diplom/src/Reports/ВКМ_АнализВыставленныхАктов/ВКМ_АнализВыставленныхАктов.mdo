@@ -10,11 +10,12 @@
     <value>ВКМ анализ выставленных актов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <templates uuid="789a138f-0e57-49c3-9574-c1a80e170fcf">
-    <name>Макет</name>
+  <mainDataCompositionSchema>Report.ВКМ_АнализВыставленныхАктов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="1474c679-0bee-48b9-8204-1585985cc9cb">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Макет</value>
+      <value>Основная схема компоновки данных</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>

@@ -10,11 +10,12 @@
     <value>ВКМ расход запланированных отпусков</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <templates uuid="318b6958-a68a-42c3-8c77-d83cb8d9344d">
-    <name>Макет</name>
+  <mainDataCompositionSchema>Report.ВКМ_РасходЗапланированныхОтпусков.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="ac9a35b3-0573-48bb-935e-6c75b6c3e0cf">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Макет</value>
+      <value>Основная схема компоновки данных</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>

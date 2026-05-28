@@ -100,10 +100,6 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.Date</segments>
       </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ДатаПриИзменении</name>
-      </handlers>
       <extendedTooltip>
         <name>ДатаРасширеннаяПодсказка</name>
         <id>6</id>
@@ -267,6 +263,10 @@
       <dataPath xsi:type="form:DataPath">
         <segments>Объект.ДатаПроведенияРабот</segments>
       </dataPath>
+      <handlers>
+        <event>OnChange</event>
+        <name>ДатаПроведенияРаботПриИзменении</name>
+      </handlers>
       <extendedTooltip>
         <name>ДатаПроведенияРаботРасширеннаяПодсказка</name>
         <id>18</id>

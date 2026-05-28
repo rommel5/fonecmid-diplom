@@ -70,7 +70,7 @@
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>Период</dcscor:parameter>
-					<dcsset:userSettingID>1eb93bac-03ef-4571-aa28-dda242fad4db</dcsset:userSettingID>
+					<dcsset:userSettingID>181af72a-0946-442e-b207-58c89474be90</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">

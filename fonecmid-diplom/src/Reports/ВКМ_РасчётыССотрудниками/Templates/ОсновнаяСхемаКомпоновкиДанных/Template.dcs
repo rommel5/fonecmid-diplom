@@ -120,12 +120,12 @@
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>КонецПериода</dcscor:parameter>
-					<dcsset:userSettingID>b11c6f55-33b2-46a7-8ab8-4a12622295c7</dcsset:userSettingID>
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcsset:userSettingID>56c02a8c-c6de-4734-b9b1-309f6be24e73</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>НачалоПериода</dcscor:parameter>
-					<dcsset:userSettingID>94dcbf83-9471-4b0c-b9ab-4d242476d64c</dcsset:userSettingID>
+					<dcscor:parameter>КонецПериода</dcscor:parameter>
+					<dcsset:userSettingID>359b3b3e-4767-4ce0-b40c-15732b3f2e1f</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">

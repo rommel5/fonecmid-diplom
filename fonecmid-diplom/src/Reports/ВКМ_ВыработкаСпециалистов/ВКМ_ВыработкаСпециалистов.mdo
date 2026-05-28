@@ -10,11 +10,12 @@
     <value>ВКМ выработка специалистов</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <templates uuid="817c1a9b-b98c-410f-9701-d02779f12606">
-    <name>Макет</name>
+  <mainDataCompositionSchema>Report.ВКМ_ВыработкаСпециалистов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="2c13d4b9-6303-4237-a280-afde380b4945">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Макет</value>
+      <value>Основная схема компоновки данных</value>
     </synonym>
     <templateType>DataCompositionSchema</templateType>
   </templates>
