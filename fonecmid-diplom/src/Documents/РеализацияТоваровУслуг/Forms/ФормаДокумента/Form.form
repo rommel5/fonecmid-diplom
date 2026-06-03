@@ -1248,7 +1248,7 @@
   </items>
   <items xsi:type="form:FormField">
     <name>Основание</name>
-    <id>160</id>
+    <id>168</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -1259,7 +1259,7 @@
     </dataPath>
     <extendedTooltip>
       <name>ОснованиеРасширеннаяПодсказка</name>
-      <id>162</id>
+      <id>170</id>
       <type>Label</type>
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
@@ -1269,7 +1269,7 @@
     </extendedTooltip>
     <contextMenu>
       <name>ОснованиеКонтекстноеМеню</name>
-      <id>161</id>
+      <id>169</id>
       <autoFill>true</autoFill>
     </contextMenu>
     <type>InputField</type>
@@ -1278,6 +1278,7 @@
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <wrap>true</wrap>
       <chooseType>true</chooseType>
