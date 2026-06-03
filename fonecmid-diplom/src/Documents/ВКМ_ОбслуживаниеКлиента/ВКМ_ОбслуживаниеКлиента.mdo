@@ -105,7 +105,7 @@
     <type>
       <types>Date</types>
       <dateQualifiers>
-        <dateFractions>Date</dateFractions>
+        <dateFractions>Time</dateFractions>
       </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
@@ -123,7 +123,7 @@
     <type>
       <types>Date</types>
       <dateQualifiers>
-        <dateFractions>Date</dateFractions>
+        <dateFractions>Time</dateFractions>
       </dateQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>

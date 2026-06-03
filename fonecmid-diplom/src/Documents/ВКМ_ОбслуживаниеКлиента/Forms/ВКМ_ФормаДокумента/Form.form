@@ -245,68 +245,68 @@
       <textEdit>true</textEdit>
     </extInfo>
   </items>
+  <items xsi:type="form:FormField">
+    <name>ДатаПроведенияРабот</name>
+    <id>16</id>
+    <title>
+      <key>ru</key>
+      <value>Дата проведения работ</value>
+    </title>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ДатаПроведенияРабот</segments>
+    </dataPath>
+    <handlers>
+      <event>OnChange</event>
+      <name>ДатаПроведенияРаботПриИзменении</name>
+    </handlers>
+    <extendedTooltip>
+      <name>ДатаПроведенияРаботРасширеннаяПодсказка</name>
+      <id>18</id>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ДатаПроведенияРаботКонтекстноеМеню</name>
+      <id>17</id>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>EnterOnInput</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <extendedEditMultipleValues>true</extendedEditMultipleValues>
+      <editFormat>
+        <key>ru</key>
+        <value>ДФ=dd.MM.yy</value>
+      </editFormat>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>ДатаВремя</name>
     <id>58</id>
-    <items xsi:type="form:FormField">
-      <name>ДатаПроведенияРабот</name>
-      <id>16</id>
-      <title>
-        <key>ru</key>
-        <value>Дата</value>
-      </title>
-      <visible>true</visible>
-      <enabled>true</enabled>
-      <userVisible>
-        <common>true</common>
-      </userVisible>
-      <dataPath xsi:type="form:DataPath">
-        <segments>Объект.ДатаПроведенияРабот</segments>
-      </dataPath>
-      <handlers>
-        <event>OnChange</event>
-        <name>ДатаПроведенияРаботПриИзменении</name>
-      </handlers>
-      <extendedTooltip>
-        <name>ДатаПроведенияРаботРасширеннаяПодсказка</name>
-        <id>18</id>
-        <type>Label</type>
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <extInfo xsi:type="form:LabelDecorationExtInfo">
-          <horizontalAlign>Left</horizontalAlign>
-        </extInfo>
-      </extendedTooltip>
-      <contextMenu>
-        <name>ДатаПроведенияРаботКонтекстноеМеню</name>
-        <id>17</id>
-        <autoFill>true</autoFill>
-      </contextMenu>
-      <type>InputField</type>
-      <editMode>EnterOnInput</editMode>
-      <showInHeader>true</showInHeader>
-      <headerHorizontalAlign>Left</headerHorizontalAlign>
-      <showInFooter>true</showInFooter>
-      <extInfo xsi:type="form:InputFieldExtInfo">
-        <autoMaxWidth>true</autoMaxWidth>
-        <autoMaxHeight>true</autoMaxHeight>
-        <wrap>true</wrap>
-        <extendedEditMultipleValues>true</extendedEditMultipleValues>
-        <editFormat>
-          <key>ru</key>
-          <value>ДФ=dd.MM.yy</value>
-        </editFormat>
-        <chooseType>true</chooseType>
-        <typeDomainEnabled>true</typeDomainEnabled>
-        <textEdit>true</textEdit>
-      </extInfo>
-    </items>
     <items xsi:type="form:FormField">
       <name>ВремяНачалаРаботПлан</name>
       <id>19</id>
       <title>
         <key>ru</key>
-        <value>Время начала</value>
+        <value>Время начала план.</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -355,7 +355,7 @@
       <id>22</id>
       <title>
         <key>ru</key>
-        <value>Время окончания</value>
+        <value>Время окончания план.</value>
       </title>
       <visible>true</visible>
       <enabled>true</enabled>
