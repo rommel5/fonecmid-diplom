@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="961f86b7-529c-46e4-9265-0561c71d44ab">
+  <name>ВКМ_КадровикРасчетчикРоль</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ кадровик расчетчик роль</value>
+  </synonym>
+</mdclass:Role>

@@ -20,4 +20,5 @@
   <content>Enum.ВидыДоговоровКонтрагентов</content>
   <content>Role.ВКМ_ОбслуживаниеКлиентовРоль</content>
   <content>CommonModule.ВКМ_Бот</content>
+  <content>Role.ВКМ_ГрупповоеСозданиеАктовРоль</content>
 </mdclass:Subsystem>
