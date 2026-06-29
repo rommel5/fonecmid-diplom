@@ -29,6 +29,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>AccumulationRegister.ВКМ_Отпуска</registerRecords>
+  <registerRecords>InformationRegister.ВКМ_СведенияОбОтпусках</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="1acce8fd-74a4-4c2c-b676-4244b5a76cb8">
@@ -142,6 +143,23 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="480b7efc-26db-4bf7-849d-fbd07409e856">
+      <name>ОбщаяПродолжительностьОтпуска</name>
+      <synonym>
+        <key>ru</key>
+        <value>Общая продолжительность отпуска</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c8e1fbe4-bb25-42d9-a1b6-5f945dc7e4e4">
       <name>Оформление</name>
       <synonym>
         <key>ru</key>

@@ -32,6 +32,7 @@
   <registerRecords>AccumulationRegister.ВКМ_Отпуска</registerRecords>
   <registerRecords>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</registerRecords>
   <registerRecords>CalculationRegister.ВКМ_ОсновныеНачисления</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <tabularSections uuid="ea5a67c3-6890-449e-abde-63eff8817e3e">
@@ -39,10 +40,10 @@
       <objectType typeId="542ea680-08c1-4467-902d-41d736a5bab4" valueTypeId="dc3db058-197d-4a1c-b319-26fa9cada39e"/>
       <rowType typeId="06185150-8c82-4a96-8b8f-6a9dac6b5125" valueTypeId="08bedad0-b715-45ff-a8d0-550dc44c8c98"/>
     </producedTypes>
-    <name>Начисления</name>
+    <name>ОсновныеНачисления</name>
     <synonym>
       <key>ru</key>
-      <value>Начисления</value>
+      <value>Основные начисления</value>
     </synonym>
     <attributes uuid="ed25cd92-b2b6-471c-a796-6959cabe9861">
       <name>Сотрудник</name>
@@ -52,20 +53,6 @@
       </synonym>
       <type>
         <types>CatalogRef.Пользователи</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="32158673-cfeb-4eb9-8f5b-39b07bf2f17c">
-      <name>Категория</name>
-      <synonym>
-        <key>ru</key>
-        <value>Категория</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ВКМ_КатегорияПользователей</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -130,6 +117,95 @@
       </synonym>
       <type>
         <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c63042f0-c7cf-4803-8e9a-3b23aa617c9f">
+      <name>Категория</name>
+      <synonym>
+        <key>ru</key>
+        <value>Категория</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_КатегорияПользователей</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="a0345a06-85a2-460b-a970-881eccf2b4d2">
+    <producedTypes>
+      <objectType typeId="dddf625f-6550-458d-b999-0840c87332f9" valueTypeId="44360636-deff-4ae7-a779-ae64fea06edb"/>
+      <rowType typeId="12641223-8e92-4697-b1e3-d449c4950a71" valueTypeId="ad1bc2bd-a3ff-4447-b75d-431ee05fe149"/>
+    </producedTypes>
+    <name>ДополнительныеНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные начисления</value>
+    </synonym>
+    <attributes uuid="9b6f7b98-72a2-4fc9-a790-37fbb62b14c3">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Пользователи</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="3ea62617-7ba8-407a-97da-d0b51b4c62f3">
+      <name>СуммаНачисления</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма начисления</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="d74bca81-e910-420f-ad52-a6825de637ff">
+      <name>НачисленоЧасов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Начислено часов</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="57adac1f-6bb1-49c6-a760-c3a6e2688fbc">
+      <name>Категория</name>
+      <synonym>
+        <key>ru</key>
+        <value>Категория</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВКМ_КатегорияПользователей</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

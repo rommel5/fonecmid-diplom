@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4bb5d8a9-9dc2-4609-a3b2-8378aa06f14a">
+  <producedTypes>
+    <managerType typeId="ca21f3c2-756b-4901-b67a-6aa56e88d7c9" valueTypeId="e87a7fe6-aa20-4275-a518-ff366041ac46"/>
+    <valueManagerType typeId="5f129b21-31df-44b5-9f77-93d1d331587b" valueTypeId="d5b2b425-c3ac-4311-a61b-9c4cb967d278"/>
+    <valueKeyType typeId="d5b8a87b-fbb8-466b-81d9-fd3cf8e3b3fa" valueTypeId="31c87eca-9215-4a0a-bc0d-e620493b8415"/>
+  </producedTypes>
+  <name>ВКМ_ГрафикОтпусков</name>
+  <synonym>
+    <key>ru</key>
+    <value>ВКМ график отпусков</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.ВКМ_ГрафикиРаботы</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

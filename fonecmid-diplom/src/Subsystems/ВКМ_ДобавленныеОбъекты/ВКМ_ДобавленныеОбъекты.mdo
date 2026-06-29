@@ -11,7 +11,7 @@
   <content>Document.ВКМ_ОбслуживаниеКлиента</content>
   <content>Catalog.ВКМ_ОбслуживаниеКлиентаПрисоединенныеФайлы</content>
   <content>AccumulationRegister.ВКМ_ВыполненныеКлиентуРаботы</content>
-  <content>Constant.ВКМ_ТокенУправленияТелеграмБотом</content>
+  <content>Constant.ВКМ_ТокенУправленияТБотом</content>
   <content>Catalog.ВКМ_УведомленияТелеграмБоту</content>
   <content>Constant.ВКМ_НоменклатураРаботыСпециалиста</content>
   <content>Constant.ВКМ_НоменклатураАбонентскаяПлата</content>
@@ -22,9 +22,8 @@
   <content>Catalog.ВКМ_ГрафикиРаботы</content>
   <content>InformationRegister.ВКМ_УсловияОплатыСотрудников</content>
   <content>AccumulationRegister.ВКМ_ВыполненныеСотрудникомРаботы</content>
-  <content>Role.ВКМ_ОбслуживаниеКлиентовРоль</content>
-  <content>Constant.ВКМ_ИдентификаторГруппыДляОповещения</content>
-  <content>CommonModule.ВКМ_Бот</content>
+  <content>Constant.ВКМ_ИдентификаторГруппыОповещения</content>
+  <content>CommonModule.ВКМ_Телеграмм</content>
   <content>CalculationRegister.ВКМ_ОсновныеНачисления</content>
   <content>Document.ВКМ_НачислениеЗарплаты</content>
   <content>Document.ВКМ_НачислениеФиксированнойПремии</content>
@@ -39,6 +38,9 @@
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>Report.ВКМ_РасчётыССотрудниками</content>
   <content>Report.ВКМ_АнализВыставленныхАктов</content>
-  <content>Role.ВКМ_КадровикРасчетчикРоль</content>
-  <content>Role.ВКМ_ГрупповоеСозданиеАктовРоль</content>
+  <content>Role.ВКМ_МенеджерПоОбслуживанию1</content>
+  <content>Role.ВКМ_СпециалистПоОбслуживанию2</content>
+  <content>Role.ВКМ_Бухгалтер3</content>
+  <content>Role.ВКМ_КадровикРасчетчик4</content>
+  <content>ScheduledJob.BKM_ОтправкаСообщенийВТелеграм</content>
 </mdclass:Subsystem>

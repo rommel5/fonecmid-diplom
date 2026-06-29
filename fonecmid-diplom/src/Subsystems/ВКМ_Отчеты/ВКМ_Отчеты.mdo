@@ -11,6 +11,5 @@
   <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
   <content>Report.ВКМ_РасчётыССотрудниками</content>
   <content>Report.ВКМ_АнализВыставленныхАктов</content>
-  <content>Role.ВКМ_ГрупповоеСозданиеАктовРоль</content>
-  <content>Role.ВКМ_КадровикРасчетчикРоль</content>
+  <content>Role.ВКМ_КадровикРасчетчик4</content>
 </mdclass:Subsystem>

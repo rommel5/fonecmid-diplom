@@ -5,10 +5,10 @@
     <valueManagerType typeId="aaaaaf33-44ff-4fc6-b151-41d9adc52958" valueTypeId="58c709fd-817a-43d8-8274-0239be01449c"/>
     <valueKeyType typeId="b74ef97b-f8ef-4697-bd2c-8ecef12a440d" valueTypeId="09aa8c44-91e3-4434-b3e9-d452e52c2545"/>
   </producedTypes>
-  <name>ВКМ_ИдентификаторГруппыДляОповещения</name>
+  <name>ВКМ_ИдентификаторГруппыОповещения</name>
   <synonym>
     <key>ru</key>
-    <value>Идентификатор группы для оповещения Константа</value>
+    <value>Идентификатор группы оповещения</value>
   </synonym>
   <type>
     <types>String</types>

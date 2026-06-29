@@ -18,10 +18,7 @@
       <value>Период</value>
     </synonym>
     <type>
-      <types>Date</types>
-      <dateQualifiers>
-        <dateFractions>Date</dateFractions>
-      </dateQualifiers>
+      <types>StandardPeriod</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -31,10 +28,10 @@
       <objectType typeId="5b7e707d-3de2-4205-a1c6-0f86881e44c0" valueTypeId="9bfc88a6-34ff-421f-8e5c-8ade0317eb93"/>
       <rowType typeId="74d4e24a-8906-4b25-9359-73adbac1a3b2" valueTypeId="f1df990a-0eee-4ec1-9a19-ae1b396bd93d"/>
     </producedTypes>
-    <name>СписокДоговоров</name>
+    <name>СписокДоговоровИРеализаций</name>
     <synonym>
       <key>ru</key>
-      <value>Список договоров</value>
+      <value>Список договоров и реализаций</value>
     </synonym>
     <attributes uuid="53095559-f7e2-4081-82ad-c423e9d6b7ef">
       <name>Договор</name>

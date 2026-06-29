@@ -25,5 +25,15 @@
   <content>InformationRegister.ВКМ_ГрафикРаботы</content>
   <content>AccumulationRegister.ВКМ_Отпуска</content>
   <content>AccumulationRegister.ВКМ_ВзаиморасчетыССотрудниками</content>
-  <content>Role.ВКМ_КадровикРасчетчикРоль</content>
+  <content>InformationRegister.ВКМ_СведенияОбОтпусках</content>
+  <content>Report.ВКМ_ВыработкаСпециалистов</content>
+  <content>Report.ВКМ_АнализВыставленныхАктов</content>
+  <content>Report.ВКМ_РасходЗапланированныхОтпусков</content>
+  <content>Report.ВКМ_РасчётыССотрудниками</content>
+  <content>Catalog.Пользователи</content>
+  <content>Catalog.ДоговорыКонтрагентов</content>
+  <content>Catalog.Контрагенты</content>
+  <content>Constant.ВКМ_ГрафикОтпусков</content>
+  <content>Role.ВКМ_Бухгалтер3</content>
+  <content>Role.ВКМ_КадровикРасчетчик4</content>
 </mdclass:Subsystem>
