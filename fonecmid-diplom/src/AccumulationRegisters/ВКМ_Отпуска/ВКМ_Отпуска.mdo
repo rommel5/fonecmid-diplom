@@ -17,11 +17,11 @@
   <registerType>Turnovers</registerType>
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSplitting>true</enableTotalsSplitting>
-  <resources uuid="c33b9e67-223a-49aa-8b3c-8d434531f2d7">
-    <name>ВсегоДней</name>
+  <resources uuid="cb5a1fbb-0e26-45ec-86d5-5f20f3b00dc1">
+    <name>ИспользованоДней</name>
     <synonym>
       <key>ru</key>
-      <value>Всего дней</value>
+      <value>Использовано дней</value>
     </synonym>
     <type>
       <types>Number</types>
@@ -33,11 +33,11 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <resources uuid="cb5a1fbb-0e26-45ec-86d5-5f20f3b00dc1">
-    <name>ИспользованоДней</name>
+  <resources uuid="8ee5295f-a0d9-402c-81f7-32232796d98d">
+    <name>ВсегоДней</name>
     <synonym>
       <key>ru</key>
-      <value>Использовано дней</value>
+      <value>Всего дней</value>
     </synonym>
     <type>
       <types>Number</types>

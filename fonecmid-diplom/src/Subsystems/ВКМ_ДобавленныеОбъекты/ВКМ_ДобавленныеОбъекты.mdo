@@ -43,4 +43,5 @@
   <content>Role.ВКМ_Бухгалтер3</content>
   <content>Role.ВКМ_КадровикРасчетчик4</content>
   <content>ScheduledJob.BKM_ОтправкаСообщенийВТелеграм</content>
+  <content>Enum.ВКМ_СтатусЗаявкиНаОбслуживание</content>
 </mdclass:Subsystem>

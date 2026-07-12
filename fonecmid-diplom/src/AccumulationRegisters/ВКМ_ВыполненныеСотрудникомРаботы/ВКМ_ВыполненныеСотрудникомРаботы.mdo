@@ -14,6 +14,7 @@
     <value>РН выполненные сотрудником работы</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
+  <registerType>Turnovers</registerType>
   <dataLockControlMode>Managed</dataLockControlMode>
   <enableTotalsSplitting>true</enableTotalsSplitting>
   <resources uuid="bcd20929-3f68-467d-998e-527c1d6cc311">

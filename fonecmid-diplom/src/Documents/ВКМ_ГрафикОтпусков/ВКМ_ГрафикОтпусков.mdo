@@ -28,8 +28,8 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ВКМ_ГрафикОтпусков.Form.ФормаДокумента</defaultObjectForm>
-  <registerRecords>AccumulationRegister.ВКМ_Отпуска</registerRecords>
   <registerRecords>InformationRegister.ВКМ_СведенияОбОтпусках</registerRecords>
+  <registerRecords>AccumulationRegister.ВКМ_Отпуска</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="1acce8fd-74a4-4c2c-b676-4244b5a76cb8">

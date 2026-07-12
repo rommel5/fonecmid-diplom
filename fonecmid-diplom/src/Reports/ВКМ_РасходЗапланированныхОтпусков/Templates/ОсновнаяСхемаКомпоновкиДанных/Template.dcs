@@ -14,34 +14,62 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ВсегоДней</dataPath>
-			<field>ВсегоДней</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ИспользованоДнейОборот</dataPath>
-			<field>ИспользованоДнейОборот</field>
+			<dataPath>ИспользованоДней</dataPath>
+			<field>ИспользованоДней</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовано дней</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Год</dataPath>
 			<field>Год</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>[Запланировано отпуска]</dataPath>
+			<field>ВсегоДнейОборот</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ
-	ВКМ_Отпуска.Сотрудник КАК Сотрудник,
-	ВКМ_Отпуска.ВсегоДней КАК ВсегоДней,
-	ВКМ_ОтпускаОбороты.ИспользованоДнейОборот КАК ИспользованоДнейОборот
+	ВКМ_ОтпускаОбороты.Сотрудник КАК Сотрудник,
+	ЕСТЬNULL(СУММА(ВКМ_ОтпускаОбороты.ИспользованоДнейОборот), 0) КАК ИспользованоДней
+ПОМЕСТИТЬ ВременнаяТаблица1
 ИЗ
-	РегистрНакопления.ВКМ_Отпуска КАК ВКМ_Отпуска
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ВКМ_Отпуска.Обороты(&amp;НачалоПериода, &amp;КонецПериода,,) КАК ВКМ_ОтпускаОбороты
-		ПО ВКМ_Отпуска.Сотрудник = ВКМ_ОтпускаОбороты.Сотрудник</query>
+	РегистрНакопления.ВКМ_Отпуска.Обороты(&amp;НачалоПериода, &amp;КонецПериода,,) КАК ВКМ_ОтпускаОбороты
+СГРУППИРОВАТЬ ПО
+	ВКМ_ОтпускаОбороты.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВКМ_ОтпускаОбороты.Сотрудник КАК Сотрудник,
+	ЕСТЬNULL(СУММА(ВКМ_ОтпускаОбороты.ВсегоДнейОборот), 0) КАК ВсегоДнейОборот
+ПОМЕСТИТЬ ВременнаяТаблица2
+ИЗ
+	РегистрНакопления.ВКМ_Отпуска.Обороты(&amp;НачалоПериода, &amp;КонецПериода,,) КАК ВКМ_ОтпускаОбороты
+СГРУППИРОВАТЬ ПО
+	ВКМ_ОтпускаОбороты.Сотрудник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВременнаяТаблица2.Сотрудник КАК Сотрудник,
+	ВременнаяТаблица1.ИспользованоДней КАК ИспользованоДней,
+	ВременнаяТаблица2.ВсегоДнейОборот КАК ВсегоДнейОборот
+ИЗ
+	ВременнаяТаблица2 КАК ВременнаяТаблица2
+		ЛЕВОЕ СОЕДИНЕНИЕ ВременнаяТаблица1 КАК ВременнаяТаблица1
+		ПО ВременнаяТаблица2.Сотрудник = ВременнаяТаблица1.Сотрудник</query>
 	</dataSet>
 	<totalField>
-		<dataPath>ВсегоДней</dataPath>
-		<expression>Сумма(ВсегоДней)</expression>
+		<dataPath>ИспользованоДней</dataPath>
+		<expression>Сумма(ИспользованоДней)</expression>
 	</totalField>
 	<totalField>
-		<dataPath>ИспользованоДнейОборот</dataPath>
-		<expression>Сумма(ИспользованоДнейОборот)</expression>
+		<dataPath>[Запланировано отпуска]</dataPath>
+		<expression>Сумма([Запланировано отпуска])</expression>
 	</totalField>
 	<parameter>
 		<name>НачалоПериода</name>
@@ -81,20 +109,23 @@
 		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
 			<dcsset:selection>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ВсегоДней</dcsset:field>
+					<dcsset:field>Сотрудник</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ИспользованоДнейОборот</dcsset:field>
+					<dcsset:field>[Запланировано отпуска]</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИспользованоДней</dcsset:field>
 				</dcsset:item>
 			</dcsset:selection>
 			<dcsset:dataParameters>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>НачалоПериода</dcscor:parameter>
-					<dcsset:userSettingID>e9f08e57-b772-4786-85a7-882c836e67db</dcsset:userSettingID>
+					<dcsset:userSettingID>18d59f80-51f7-47eb-96d4-5dd75e038f68</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:parameter>КонецПериода</dcscor:parameter>
-					<dcsset:userSettingID>0cee2f5e-bb2d-4d70-9922-ce04186bc31a</dcsset:userSettingID>
+					<dcsset:userSettingID>4bbb99ca-6640-4278-91d0-cd9e686b6f57</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
